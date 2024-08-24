@@ -21,10 +21,11 @@ from . import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("saludo/", views.saludo),
-    path("segunda_vista/", views.segunda_vista),
-    path("nombre/<nombre>/<apellido>/<edad>/", views.nombre),
+    # path("saludo/", views.saludo),
+    # path("segunda_vista/", views.segunda_vista),
+    # path("nombre/<nombre>/<apellido>/<edad>/", views.nombre),
+    # path("tirar_dado/", views.tirar_dados),
+    # path("fecha_actual/", views.fecha_hoy),
     path("probando_template/", views.probando_template),
-    path("tirar_dado/", views.tirar_dados),
-    path("fecha_actual/", views.fecha_hoy),
+    path("probando_template2/", views.probando_template2),
 ]
