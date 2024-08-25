@@ -10,5 +10,6 @@ Lista de Paises
     {% for pais in paises %}
     <p>{{pais}}</p>
     {% endfor %}
+    <button><a href="{% url 'clientes:index' %}">Volver</a></button>
 </div>
 {% endblock main %}
