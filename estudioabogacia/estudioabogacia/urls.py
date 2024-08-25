@@ -16,7 +16,7 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from . import views
 
 urlpatterns = [
@@ -28,4 +28,5 @@ urlpatterns = [
     # path("fecha_actual/", views.fecha_hoy),
     path("probando_template/", views.probando_template),
     path("probando_template2/", views.probando_template2),
+    path("clientes/", include("clientes.urls")),
 ]
