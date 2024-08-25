@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos</title>
+</head>
+
+<body>
+    <h1>Lista de productos:</h1>
+    {% for producto in productos %}
+    <p>{{producto}}</p>
+    {% endfor %}
+    <button><a href="{% url 'core:index' %}">Home</a></button>
+</body>
+
+</html>
