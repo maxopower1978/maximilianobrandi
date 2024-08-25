@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'core/index.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% block header %}
+Clientes
+{% endblock header %}
 
-<body>
-    <h1>Clientes</h1>
-    <button><a href="{% url 'clientes:pais_list' %}">Listar paises</a></button>
-    <button><a href="{% url 'clientes:cliente_list' %}">Listar clientes</a></button>
-</body>
 
-</html>
+{% block main %}
+<button><a href="{% url 'clientes:pais_list' %}">Listar paises</a></button>
+<button><a href="{% url 'clientes:cliente_list' %}">Listar clientes</a></button>
+{% endblock main %}

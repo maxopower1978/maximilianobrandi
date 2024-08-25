@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'core/index.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>paises</title>
-</head>
+{% block header %}
+Lista de Paises
+{% endblock header %}
 
-<body>
-    <h1>Lista de paises:</h1>
+
+{% block main %}
+<div>
     {% for pais in paises %}
     <p>{{pais}}</p>
     {% endfor %}
-    <button><a href="{% url 'core:index' %}">Home</a></button>
-</body>
-
-</html>
+</div>
+{% endblock main %}

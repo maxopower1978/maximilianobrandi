@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'core/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% block header %}
+Estudio de abogacía
+{% endblock header %}
 
-<body>
-    <h1>Home</h1>
-    <button><a href="{% url 'clientes:index' %}">Clientes</a></button>
-    <button><a href="{% url 'productos:index' %}">Productos</a></button>
-
-</html>
+{% block main %}
+<div>
+    <img style="width: 100%;height: 50vh;margin-top: 10vh" ;
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMtDeVqLJRZMMuJdjL58NBlYG26cbw2EQfQ&s">
+</div>
+{% endblock main %}
