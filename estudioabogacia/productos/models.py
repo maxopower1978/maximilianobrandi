@@ -7,3 +7,7 @@ class CategoriaProducto(models.Model):
 
     def __str__(self):
         return f"{self.producto}, es de la categoría {self.categoria}"
+
+    class Meta:
+        verbose_name = "Categoria de producto"
+        verbose_name_plural = "Categorias de productos"
